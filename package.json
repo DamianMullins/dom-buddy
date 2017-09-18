@@ -1,13 +1,13 @@
 {
   "name": "dom-buddy",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "DOM helper functions.",
   "main": "dist/index.js",
   "files": ["dist"],
   "repository": "git@github.com:DamianMullins/dom-buddy.git",
   "author": "Damian Mullins <damian.mullins@just-eat.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@justeat/eslint-config-fozzie": "^1.2.0",
     "babel-cli": "^6.26.0",
     "babel-preset-babili": "^0.1.4",
@@ -16,7 +16,8 @@
     "eslint-plugin-import": "^2.7.0"
   },
   "scripts": {
-    "prepublish": "yarn run lint && yarn run compile",
+    "prepublishOnly": "yarn run lint && yarn run compile",
+    "postinstall": "yarn run lint",
     "lint": "eslint src/**",
     "compile": "babel -d dist src"
   }
