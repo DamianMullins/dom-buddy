@@ -13,17 +13,6 @@ v1.0.1
 - Moved build packages in `devDependencies`.
 
 
-v1.0.0
-------------------------------
-*September 18, 2017*
-
-### Added
-- Added changelog.
-
-### Changed
-- Package now published with minified scripts.
-
-
 v0.0.1
 ------------------------------
 *September 18, 2017*
