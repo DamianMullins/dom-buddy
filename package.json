@@ -1,6 +1,6 @@
 {
   "name": "dom-buddy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DOM helper functions.",
   "main": "dist/index.js",
   "files": ["dist"],
@@ -16,8 +16,7 @@
     "eslint-plugin-import": "^2.7.0"
   },
   "scripts": {
-    "prepublishOnly": "yarn run lint && yarn run compile",
-    "postinstall": "yarn run lint",
+    "prepare": "yarn run lint && yarn run compile",
     "lint": "eslint src/**",
     "compile": "babel -d dist src"
   }
