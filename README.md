@@ -1,4 +1,4 @@
-# DOM Buddy :bowtie:
+# DOM Buddy :construction_worker:
 
 [![npm version](https://badge.fury.io/js/dom-buddy.svg)](https://badge.fury.io/js/dom-buddy)
 [![Build Status](https://travis-ci.org/DamianMullins/dom-buddy.svg)](https://travis-ci.org/DamianMullins/dom-buddy)
