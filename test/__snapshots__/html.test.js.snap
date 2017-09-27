@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`setBodyHtml() sets the document body html 1`] = `"<h1>Heading</h1>"`;
+
+exports[`setHtml() sets element html 1`] = `
+"<main>
+                          <h1>Heading</h1>
+                      </main>"
+`;
+
+exports[`setHtml() sets the document body html 1`] = `"<h1>Heading</h1>"`;
