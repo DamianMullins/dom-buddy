@@ -20,7 +20,7 @@
   },
   "scripts": {
     "prepare": "yarn run lint && yarn run compile",
-    "lint": "eslint {src,test}/**",
+    "lint": "eslint {src,test}/**/*.js",
     "compile": "babel -d dist src",
     "test": "jest",
     "test:watch": "jest --watch"
