@@ -9,8 +9,8 @@
 /**
  * Creates and dispatches a DOM event
  *
- * @param {Node} element
- * @param {string} name
+ * @param {Node} [element=document]
+ * @param {string} type
  * @param {object} detail
  *
  * @example

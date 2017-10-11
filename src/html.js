@@ -8,6 +8,8 @@
 /**
  * Get the HTML content of the body.
  *
+ * @param {Node} [element=document]
+ *
  * @returns {string}
  */
 export const getHtml = (element = document.body) => (element && element.innerHTML) || '';
