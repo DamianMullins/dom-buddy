@@ -24,9 +24,8 @@
     "prepare": "concurrently -n \"lint,compile,test\" -c \"blue,yellow,green\" --kill-others-on-fail \"yarn lint\" \"yarn compile\" \"yarn run test\"",
     "lint": "eslint {src,test}/**/*.js",
     "compile": "babel -d dist src",
-    "test": "jest",
-    "test:cover": "jest --coverage",
+    "test": "jest --coverage",
     "test:watch": "jest --watch --coverage",
-    "test:cover:coveralls": "cat coverage/lcov.info | coveralls"
+    "test:coveralls": "cat coverage/lcov.info | coveralls"
   }
 }

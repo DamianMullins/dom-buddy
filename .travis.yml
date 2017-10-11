@@ -7,4 +7,4 @@ node_js:
 cache: yarn
 
 after_success:
-  - yarn run test:cover:coveralls
+  - yarn run test:coveralls
