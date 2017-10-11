@@ -10,7 +10,7 @@
  *
  * @returns {string}
  */
-export const getHtml = (element = document.body) => element.innerHTML;
+export const getHtml = (element = document.body) => (element && element.innerHTML) || '';
 
 /**
  * Sets the inner HTML content of an element.
@@ -19,7 +19,9 @@ export const getHtml = (element = document.body) => element.innerHTML;
  * @param {string} html The HTML content to set.
  */
 export const setHtml = (element, html) => {
-    element.innerHTML = html;
+    if (element && html) {
+        element.innerHTML = html;
+    }
 };
 
 /**

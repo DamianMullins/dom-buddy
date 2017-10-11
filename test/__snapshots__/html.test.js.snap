@@ -1,11 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`setBodyHtml() sets the document body html 1`] = `"<h1>Heading</h1>"`;
+exports[`setBodyHtml() does not set document body html if \`null\` is passed 1`] = `""`;
 
-exports[`setHtml() sets element html 1`] = `
-"<main>
-                          <h1>Heading</h1>
-                      </main>"
-`;
+exports[`setBodyHtml() does not set document body html if \`undefined\` is passed 1`] = `""`;
+
+exports[`setBodyHtml() sets document body html 1`] = `"<h1>Heading</h1>"`;
+
+exports[`setHtml() does not set html if \`null\` element is passed 1`] = `""`;
+
+exports[`setHtml() does not set html if \`null\` html is passed 1`] = `""`;
+
+exports[`setHtml() does not set html if \`undefined\` element is passed 1`] = `""`;
+
+exports[`setHtml() does not set html if \`undefined\` html is passed 1`] = `""`;
+
+exports[`setHtml() sets element html 1`] = `"<h1><span>Heading</span></h1>"`;
 
 exports[`setHtml() sets the document body html 1`] = `"<h1>Heading</h1>"`;
