@@ -16,7 +16,7 @@ v2.0.0
 - Added coveralls badge to readme.
 
 ### Changed
-- Prepare script uses `concurrently` in order to run tasks concurrently..! It is configured so that if a single task
+- Prepare script uses `concurrently` in order to run tasks concurrently..!
 
 
 v1.0.2
