@@ -1,5 +1,6 @@
 import { getHtml, setHtml, setBodyHtml } from '../src/html';
 
+
 beforeEach(() => {
     document.body.innerHTML = '';
 });
