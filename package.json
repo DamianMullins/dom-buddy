@@ -21,7 +21,7 @@
     "jest": "^21.2.1"
   },
   "scripts": {
-    "prepare": "concurrently \"yarn run lint\" \"yarn run compile\" \"yarn run test\" --kill-others-on-fail",
+    "prepare": "concurrently -n \"lint,compile,test\" -c \"blue,yellow,green\" --kill-others-on-fail \"yarn lint\" \"yarn compile\" \"yarn run test\"",
     "lint": "eslint {src,test}/**/*.js",
     "compile": "babel -d dist src",
     "test": "jest",
