@@ -9,8 +9,8 @@
 /**
  * Creates and dispatches a DOM event
  *
- * @param {Node} element
- * @param {string} name
+ * @param {Node} [element=document]
+ * @param {string} type
  * @param {object} detail
  *
  * @example
@@ -18,11 +18,11 @@
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Event|Event - MDN}
  */
-export const dispatchEvent = (element, type, detail) => {
+export const dispatchEvent = (element = document, type, detail) => {
     let event;
 
     if (detail) {
-        event = new CustomEvent(type, detail);
+        event = new CustomEvent(type, { detail });
     } else {
         event = new Event(type);
     }

@@ -1,3 +1,2 @@
-
 export { getHtml, setHtml } from './html';
-export { dispatchEvent, getTarget } from './events';
+export { dispatchEvent } from './events';
