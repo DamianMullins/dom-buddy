@@ -7,7 +7,7 @@
     "dist"
   ],
   "repository": "git@github.com:DamianMullins/dom-buddy.git",
-  "author": "Damian Mullins <damian.mullins@just-eat.com>",
+  "author": "Damian Mullins <damian@lowflyingowls.co.uk>",
   "license": "MIT",
   "devDependencies": {
     "@justeat/eslint-config-fozzie": "^1.2.0",
