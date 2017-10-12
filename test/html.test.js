@@ -1,4 +1,9 @@
-import { getHtml, setHtml, setBodyHtml } from '../src/html';
+import {
+    getHtml,
+    getBodyHtml,
+    setHtml,
+    setBodyHtml
+} from '../src/html';
 
 
 beforeEach(() => {
@@ -29,16 +34,15 @@ describe('getHtml()', () => {
         expect(result).toBe('');
     });
 
-    it('returns html from the document body by default', () => {
+    it('returns empty string if empty string is passed', () => {
         // Arrange
-        const html = '<h1>Heading</h1>';
-        document.body.innerHTML = html;
+        const element = '';
 
         // Act
-        const result = getHtml();
+        const result = getHtml(element);
 
         // Assert
-        expect(result).toBe(html);
+        expect(result).toBe('');
     });
 
     it('returns html from specified element', () => {
@@ -53,6 +57,22 @@ describe('getHtml()', () => {
 
         // Assert
         expect(result).toBe(headingText);
+    });
+
+});
+
+describe('getBodyHtml()', () => {
+
+    it('returns html from document body', () => {
+        // Arrange
+        const html = '<h1>Heading</h1>';
+        document.body.innerHTML = html;
+
+        // Act
+        const result = getBodyHtml();
+
+        // Assert
+        expect(result).toBe(html);
     });
 
 });

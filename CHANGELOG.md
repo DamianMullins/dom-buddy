@@ -4,6 +4,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+v2.1.0
+------------------------------
+*October 12, 2017*
+
+### Added
+- Added `getBodyHtml` function.
+- Added unit tests for `getBodyHtml` function.
+- Added unit test for `getHtml`.
+- Module now exports the `getBodyHtml` and `setBodyHtml` functions.
+
+### Changed
+- `getHtml` element no longer defaults to `document.body`.
+- Minor refactoring of the `html` module.
+
+
 v2.0.0
 ------------------------------
 *October 11, 2017*
