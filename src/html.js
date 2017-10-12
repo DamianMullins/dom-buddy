@@ -28,7 +28,7 @@ export const getBodyHtml = () => getHtml(document.body);
  * @param {string} element HTML content will be set for this element.
  * @param {string} html The HTML content to set.
  */
-export const setHtml = (element, html) => element && html && (element.innerHTML = html);
+export const setHtml = (element, html) => element && html && (element.innerHTML = html); // eslint-disable-line no-return-assign
 
 /**
  * Sets the inner HTML content of the document body.

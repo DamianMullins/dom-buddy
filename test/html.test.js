@@ -65,7 +65,7 @@ describe('getBodyHtml()', () => {
 
     it('returns html from document body', () => {
         // Arrange
-        const html = `<h1>Heading</h1>`;
+        const html = '<h1>Heading</h1>';
         document.body.innerHTML = html;
 
         // Act
