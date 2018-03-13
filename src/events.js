@@ -5,7 +5,6 @@
  * @module events
  */
 
-
 /**
  * Creates and dispatches a DOM event
  *

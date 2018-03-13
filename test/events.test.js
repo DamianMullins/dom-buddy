@@ -1,8 +1,6 @@
 import { dispatchEvent } from '../src/events';
 
-
 describe('dispatchEvent()', () => {
-
     it('throws if element is `null`', () => {
         // Arrange
         const element = null;
@@ -140,6 +138,4 @@ describe('dispatchEvent()', () => {
         // Assert
         expect(result.detail).toEqual(detail);
     });
-
-
 });
