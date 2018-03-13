@@ -1,6 +1,6 @@
 {
   "name": "dom-buddy",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "DOM helper functions.",
   "main": "dist/index.js",
   "files": [
@@ -13,7 +13,7 @@
     "@justeat/eslint-config-fozzie": "1.4.0",
     "babel-cli": "6.26.0",
     "babel-preset-babili": "0.1.4",
-    "babel-preset-es2015": "6.24.1",
+    "babel-preset-env": "1.6.1",
     "concurrently": "3.5.1",
     "coveralls": "3.0.0",
     "eslint": "4.18.2",
@@ -41,5 +41,8 @@
       "jest --bail --findRelatedTests",
       "git add"
     ]
-  }
+  },
+  "browserslist": [
+    "node 4.0"
+  ]
 }
