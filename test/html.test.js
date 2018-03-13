@@ -1,17 +1,10 @@
-import {
-    getHtml,
-    getBodyHtml,
-    setHtml,
-    setBodyHtml
-} from '../src/html';
-
+import { getHtml, getBodyHtml, setHtml, setBodyHtml } from '../src/html';
 
 beforeEach(() => {
     document.body.innerHTML = '';
 });
 
 describe('getHtml()', () => {
-
     it('returns empty string if `null` is passed', () => {
         // Arrange
         const element = null;
@@ -58,11 +51,9 @@ describe('getHtml()', () => {
         // Assert
         expect(result).toBe(headingText);
     });
-
 });
 
 describe('getBodyHtml()', () => {
-
     it('returns html from document body', () => {
         // Arrange
         const html = '<h1>Heading</h1>';
@@ -74,11 +65,9 @@ describe('getBodyHtml()', () => {
         // Assert
         expect(result).toBe(html);
     });
-
 });
 
 describe('setHtml()', () => {
-
     it('does not set html if `null` element is passed', () => {
         // Arrange
         const element = null;
@@ -151,11 +140,9 @@ describe('setHtml()', () => {
         // Assert
         expect(document.body.innerHTML).toMatchSnapshot();
     });
-
 });
 
 describe('setBodyHtml()', () => {
-
     it('does not set document body html if `null` is passed', () => {
         // Arrange
         const html = null;
@@ -188,5 +175,4 @@ describe('setBodyHtml()', () => {
         // Assert
         expect(document.body.innerHTML).toMatchSnapshot();
     });
-
 });
