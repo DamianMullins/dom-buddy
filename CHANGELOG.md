@@ -3,6 +3,12 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+v2.4.1
+------------------------------
+*January 21, 2018*
+### Changed
+- Add missing cookie export
+
 v2.4.0
 ------------------------------
 *January 17, 2018*
